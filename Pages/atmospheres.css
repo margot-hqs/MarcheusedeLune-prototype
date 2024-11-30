@@ -1,0 +1,106 @@
+@font-face {
+    font-family: 'font_general';
+    src: url('../Assets/Font/Font_general.ttf');
+}
+
+@font-face {
+    font-family: 'font_titre';
+    src: url('../Assets/Font/Font_title.ttf');
+}
+
+
+* {
+    font-family: "font_general";
+}
+
+body{
+    margin: 0 auto;
+    background-color: grey;
+}
+
+/* Top navigation menu */
+
+header.header1 {
+    display: flex;
+    align-items: center;
+}
+
+header.header1 img{
+    width: 350px;
+}
+
+nav.nav {
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+    width: 60vh;
+    font-size: 1.8vh;
+}
+
+nav.nav li {
+    color: white;
+    transition: transform 0.3s ease-in-out;
+}
+
+nav.nav li:hover {
+    transform: scale(1.1);
+}
+
+nav.nav a:link,
+nav.nav a:visited {
+    color: white;
+    text-decoration: none;
+}
+
+/* The blocks of atmospheres */
+
+.theme {
+    margin: 4vh;
+}
+
+.section_title {
+    border-radius: 10px;
+    background-color: rgba(212, 212, 212, 0.562);
+    padding: 0.5vh;
+    margin-bottom: 3vh;
+    text-align: center;
+}
+
+.big_title {
+    margin-left: 1vh;
+    font-size: 4.7vh;
+    font-family: "font_titre", cursive;
+    font-weight: 100;
+    position: relative;
+    color: black;
+    margin-bottom: 1vh;
+}
+
+.intro {
+    font-size: 2vh;
+    margin-left: 7vh;
+    line-height: 2;
+    text-align: center;
+}
+
+.gallery {
+    line-height:2;
+    column-count:5;
+    column-gap:2vh;
+}
+
+.gallery img{
+    width: 100%;
+    height: auto;
+    margin-bottom:1vh;
+}
+
+/* Footer */
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 3vh;
+    font-weight: 500;
+}

@@ -1,0 +1,227 @@
+
+@font-face {
+    font-family: 'font_general';
+    src: url('../Assets/Font/Font_general.ttf');
+}
+
+@font-face {
+    font-family: 'font_titre';
+    src: url('../Assets/Font/Font_title.ttf');
+}
+
+
+* {
+    font-family: "font_general";
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body{
+    margin: 0 auto;
+    background-color: rgba(128, 128, 128, 0.582);
+}
+
+/* Header */
+
+header.header1 {
+    display: flex;
+    align-items: center;
+}
+
+header.header1 img{
+    width: 350px;
+}
+
+section.top-page{
+    background: url("../Assets/Images/Background1.JPG");
+    background-size: cover;
+    min-height: 100vh;
+    padding: 25px;
+}
+
+/* Landing page*/
+
+.landing-page {
+    padding: 20px 50px;
+    position: relative;
+}
+
+.landing-page img {
+    width: 15px;
+}
+
+.big-title1 {
+    color: white;
+    font-size: 80px;
+    font-family: 'font_titre', cursive;
+    font-weight: 100;
+    width: 40%;
+}
+
+.scroll-down {
+    color: white;
+    text-decoration: none;
+    bottom: 0;
+    margin-top: 50px;
+}
+
+/* Top navigation menu */
+
+nav.nav {
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+    width: 60vh;
+    font-size: 1.8vh;
+}
+
+nav.nav li {
+    color: white;
+    transition: transform 0.3s ease-in-out;
+}
+
+nav.nav li:hover {
+    transform: scale(1.1); 
+}
+
+nav.nav a:link,
+nav.nav a:visited {
+    color: white;
+    text-decoration: none;
+}
+
+/* 3 steps */
+
+.services {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.service-item {
+    display: flex;
+    align-items: center;
+    width: 60%;
+    justify-content: space-around;
+    color: black;
+}
+
+.service-item img {
+    width: 200px;
+}
+
+.service-details {
+    font-weight: 700;
+    width: 200px;
+    text-align: center;
+}
+
+
+/* 3 atmospheres */
+
+.section-title {
+    font-size: 50px;
+    font-family: "font_titre", cursive;
+    font-weight: 100;
+    position: relative;
+    color: black;
+}
+
+.section-title::before {
+    content: "";
+    position: absolute;
+    background-color: #006400;
+    width: 50px;
+    height: 7px;
+    bottom: 0;
+}
+
+.types {
+    margin: 100px;
+}
+
+.atmosphere {
+    min-height: 500px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.image-box {
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    min-width: 350px;
+    height: 500px;
+    flex: 1;
+    transition: transform 0.3s ease-in-out;
+    z-index: 1;
+}
+
+.image-box:hover {
+    transform: scale(1.05);
+    z-index: 2; 
+}
+
+.image-box a, .image-box a:visited, .image-box a:hover, .image-box a:active {
+    color: inherit; 
+    text-decoration: none; 
+}
+
+.biome, .details {
+    color: #000;
+}
+
+.box1 {
+    background-image: url(../Assets/Images/brume_et_lumière/box1.JPG);
+}
+
+.box2 {
+    background-image: url(../Assets/Images/monde_du_minuscule/box2.JPG);
+}
+
+.box3 {
+    background-image: url(../Assets/Images/fil_de_l_eau/box3.JPG);
+}
+
+.box4 {
+    background-image: url(../Assets/Images/neiges_éternelles/box4.JPG);
+}
+
+.box-details {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    background-color: #ffffffa1;
+    padding: 20px 0px;
+}
+
+.biome {
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 3px;
+    margin-left: 20px;
+}
+
+.details {
+    color: #043A29   	;
+    line-height: 3px;
+    font-size: 14px;
+    font-weight: 800;
+    margin-left: 20px;
+
+}
+
+/* Footer */
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 3vh;
+    font-weight: 500;
+}

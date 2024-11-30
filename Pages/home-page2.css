@@ -1,0 +1,52 @@
+@font-face {
+    font-family: 'font_general';
+    src: url('../Assets/Font/Font_general.ttf');
+}
+
+@font-face {
+    font-family: 'font_titre';
+    src: url('../Assets/Font/Font_title.ttf');
+}
+
+* {
+    font-family: "font_general";
+}
+
+body{
+    margin: 0 auto;     /* revoir */
+    background-color: rgba(128, 128, 128, 0.582);
+}
+
+/* Header */
+
+header {
+    display: flex; /* c'est mort */
+    align-items: center;
+}
+
+header img{
+    width: 350px;
+}
+
+nav {
+    display: flex; /* c'est mort */
+    justify-content: space-evenly;
+    list-style: none;
+    width: 60vh;
+    font-size: 1.8vh;
+}
+
+nav a:link,
+nav a:visited {
+    color: white;
+    text-decoration: none;
+}
+
+/*  Landing page */
+
+section.intro{
+    background: url("../Assets/Images/Background1.JPG");
+    background-size: cover;
+    min-height: 100vh;
+    padding: 25px;
+}
